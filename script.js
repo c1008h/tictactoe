@@ -1,6 +1,8 @@
 var gameContainer = document.querySelector('.container')
 var playerOneEl = document.querySelector('#playerOne')
 var playerTwoEl = document.querySelector('#playerTwo')
+var playbtn = document.querySelector('#play-btn')
+
 let circlePlayer = false
 let xPlayer = false
 let gameOver = false;
@@ -33,7 +35,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.addEventListener('click', function(e) {
-        if (gameOver) return;
+        if (gameOver) {
+            playbtn.hidden = false;
+            return
+        };
 
         console.log(e.target)
         let id = e.target.id
@@ -72,6 +77,10 @@ document.addEventListener('DOMContentLoaded', function() {
             gameOver = true
         }
 
+    })
+
+    playbtn.addEventListener('click', function() {
+        window.reload()
     })
 })
 
