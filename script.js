@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     playbtn.addEventListener('click', function() {
-        window.reload()
+        window.location.reload()
     })
 })
 
