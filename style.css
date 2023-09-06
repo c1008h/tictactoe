@@ -1,0 +1,33 @@
+body {
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 1px solid black;
+    width:250px;
+    height: 250px;
+    width: 30%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayicon {
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width:50%
+}
+.player {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
